@@ -1,0 +1,1017 @@
+[
+  {
+    "question": "Return to the most recently saved configuration",
+    "context": "rollback",
+    "answer": "Use the following command in the configuration mode:\nrollback\ncommit",
+    "cmd_category": "rollback",
+    "topic": "None",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Clear a bridge protocol data unit (BPDU) error condition",
+    "context": "clear ethernet-switching bpdu-error",
+    "answer": "Use the following command in the operational mode:\nclear ethernet-switching bpdu-error",
+    "cmd_category": "clear",
+    "topic": "ethernet-switching",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "how to delete a vlan",
+    "context": "delete vlans <vlan-name>",
+    "answer": "Use the following command in the configuration mode:\ndelete vlans <vlan-name>\ncommit",
+    "parameter_disambig": {
+      "vlan-name": "GUEST"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\ndelete vlans GUEST\ncommit",
+    "cmd_category": "delete",
+    "topic": "vlans",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "Clear port errors on the switch",
+    "context": "clear ethernet-switching port-error",
+    "answer": "Use the following command in the operational mode:\nclear ethernet-switching port-error",
+    "cmd_category": "clear",
+    "topic": "ethernet-switching",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "set the sflow polling interval to 60",
+    "context": "set protocols sflow polling-interval <interval>",
+    "answer": "Use the following command in the configuration mode:\nset protocols sflow polling-interval 60\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "how to commit the configurations and quit the configuration mode",
+    "context": "commit and-quit",
+    "answer": "Use the following command in the configuration mode:\ncommit and-quit",
+    "cmd_category": "commit",
+    "topic": "and-quit",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "How to set an interface as dhcp trusted on Juniper ex3300 switch",
+    "context": "set ethernet-switching-options secure-access-port interface <interface-name> dhcp-trusted",
+    "answer": "Use the following command in the configuration mode:\nset ethernet-switching-options secure-access-port interface <interface-name> dhcp-trusted\ncommit",
+    "parameter_disambig": {
+      "interface-name": "ge-0/0/5"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset ethernet-switching-options secure-access-port interface ge-0/0/5 dhcp-trusted\ncommit",
+    "cmd_category": "set",
+    "topic": "ethernet-switching-options",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "set the SNMP IPv4 source address for trap PDUs to 10.20.1.15",
+    "context": "set snmp trap-options source-address <ip-address>",
+    "answer": "Use the following command in the configuration mode:\nset snmp trap-options source-address 10.20.1.15\ncommit",
+    "cmd_category": "set",
+    "topic": "snmp",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "How to set up a new user account with operator privilege on the EX3300 switch and prompt for plain text password",
+    "context": "set system login user <user-name> class operator authentication plain-text-password",
+    "answer": "Use the following command in the configuration mode:\nset system login user <user-name> class operator authentication plain-text-password\ncommit",
+    "parameter_disambig": {
+      "user-name": "netops2"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset system login user netops2 class operator authentication plain-text-password\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "how to disable IGMP snooping on a VLAN",
+    "context": "set protocols igmp-snooping vlan <vlan-name> disable",
+    "answer": "Use the following command in the configuration mode:\nset protocols igmp-snooping vlan <vlan-name> disable\ncommit",
+    "parameter_disambig": {
+      "vlan-name": "VIDEO"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset protocols igmp-snooping vlan VIDEO disable\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "How to start the shell as a specific user",
+    "context": "start shell user <user-name>",
+    "answer": "Use the following command in the operational mode:\nstart shell user <user-name>",
+    "parameter_disambig": {
+      "user-name": "admin3"
+    },
+    "parm_answer": "Use the following command in the operational mode:\nstart shell user admin3",
+    "cmd_category": "start",
+    "topic": "shell",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "Show any pending halt or reboot requests",
+    "context": "show system reboot",
+    "answer": "Use the following command in the operational mode:\nshow system reboot",
+    "cmd_category": "show",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Set RSTP traceoptions to trace all failure conditions",
+    "context": "set protocols rstp traceoptions flag all-failures",
+    "answer": "Use the following command in the configuration mode:\nset protocols rstp traceoptions flag all-failures\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Set IGMP snooping traceoptions to trace policy processing",
+    "context": "set protocols igmp-snooping traceoptions flag policy",
+    "answer": "Use the following command in the configuration mode:\nset protocols igmp-snooping traceoptions flag policy\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "how to set the ssh maximum sessions per connection",
+    "context": "set system services ssh max-sessions-per-connection <max-number-of-sessions>",
+    "answer": "Use the following commands in the configuration mode:\nset system services ssh max-sessions-per-connection <max-number-of-sessions>\ncommit",
+    "parameter_disambig": {
+      "max-number-of-sessions": "10"
+    },
+    "parm_answer": "Use the following commands in the configuration mode:\nset system services ssh max-sessions-per-connection 10\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "Display IGMP snooping VLAN information",
+    "context": "show igmp-snooping vlans",
+    "answer": "Use the following command in the operational mode:\nshow igmp-snooping vlans",
+    "cmd_category": "show",
+    "topic": "igmp-snooping",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Show user accounts who are not permitted to login",
+    "context": "show system login lockout",
+    "answer": "Use the following command in the operational mode:\nshow system login lockout",
+    "cmd_category": "show",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Set RSTP traceoptions to trace all operations",
+    "context": "set protocols rstp traceoptions flag all",
+    "answer": "Use the following command in the configuration mode:\nset protocols rstp traceoptions flag all\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "How to power off all chassis members in 30 minutes",
+    "context": "request system power-off in <minutes> all-members",
+    "answer": "Use the following command in the operational mode:\nrequest system power-off in 30 all-members",
+    "cmd_category": "request",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Show memory utilization of IGMP snooping tasks",
+    "context": "show igmp-snooping task memory",
+    "answer": "Use the following command in the operational mode:\nshow igmp-snooping task memory",
+    "cmd_category": "show",
+    "topic": "igmp-snooping",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Set sFlow traceoptions to trace configuration changes",
+    "context": "set protocols sflow traceoptions flag configuration",
+    "answer": "Use the following command in the configuration mode:\nset protocols sflow traceoptions flag configuration\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "allow port ge-0/0/6 to carry traffic from all vlans",
+    "context": "set interfaces <interface-name> unit 0 family ethernet-switching port-mode trunk vlan members all",
+    "answer": "Use the following command in the configuration mode:\nset interfaces ge-0/0/6 unit 0 family ethernet-switching port-mode trunk vlan members all\ncommit",
+    "cmd_category": "set",
+    "topic": "interfaces",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "enable poe telemetry on all interfaces",
+    "context": "set poe interface all telemetries interval <interval>",
+    "answer": "Use the following command in the configuration mode:\nset poe interface all telemetries interval <interval>\ncommit",
+    "parameter_disambig": {
+      "interval": "10"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset poe interface all telemetries interval 10\ncommit",
+    "cmd_category": "set",
+    "topic": "poe",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "disable the SNMP system warm and cold starts trap for the trap-group MONITOR-GROUP-1",
+    "context": "delete snmp trap-group <trap-group-name> categories startup",
+    "answer": "Use the following command in the configuration mode:\ndelete snmp trap-group MONITOR-GROUP-1 categories startup\ncommit",
+    "cmd_category": "delete",
+    "topic": "snmp",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "how to configure the IGMP protocol host query response interval",
+    "context": "set protocols igmp query-response-interval <query-response-interval>",
+    "answer": "Use the following command in the configuration mode:\nset protocols igmp query-response-interval <query-response-interval>\ncommit",
+    "parameter_disambig": {
+      "query-response-interval": "5"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset protocols igmp query-response-interval 5\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "disable sflow protocol",
+    "context": "delete protocols sflow",
+    "answer": "Use the following command in the configuration mode:\ndelete protocols sflow\ncommit",
+    "cmd_category": "delete",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Disable IGMP protocol membership query messages traceoptions",
+    "context": "set protocols igmp traceoptions flag query disable",
+    "answer": "Use the following command in the configuration mode:\nset protocols igmp traceoptions flag query disable\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Display information about OSPF neighbors",
+    "context": "show ospf neighbor",
+    "answer": "Use the following command in the operational mode:\nshow ospf neighbor",
+    "cmd_category": "show",
+    "topic": "ospf",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "prevent the virtual chassis from using the MAC address of the primary member after it leaves virtual chassis",
+    "context": "set virtual-chassis mac-persistence-timer disable",
+    "answer": "Use the following command in the configuration mode:\nset virtual-chassis mac-persistence-timer disable\ncommit",
+    "cmd_category": "set",
+    "topic": "virtual-chassis",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Assign the IP address 10.103.3.99/16 for the interface vlan and unit 1033",
+    "context": "set interfaces vlan unit <unit-number> family inet address <ip-address/subnetmask>",
+    "answer": "Use the following command in the configuration mode:\nset interfaces vlan unit 1033 family inet address 10.103.3.99/16\ncommit",
+    "cmd_category": "set",
+    "topic": "interfaces",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "how to set the sflow ingress sampling rate",
+    "context": "set protocols sflow sample-rate ingress <rate>",
+    "answer": "Use the following command in the configuration mode:\nset protocols sflow sample-rate ingress <rate>\ncommit",
+    "parameter_disambig": {
+      "rate": "2000"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset protocols sflow sample-rate ingress 2000\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "Set RSTP traceoptions to trace port role transit state machine",
+    "context": "set protocols rstp traceoptions flag port-role-transit-state-machine",
+    "answer": "Use the following command in the configuration mode:\nset protocols rstp traceoptions flag port-role-transit-state-machine\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Enable Fast failover on GE virtual chassis uplink ports",
+    "context": "set virtual-chassis fast-failover ge",
+    "answer": "Use the following command in the configuration mode:\nset virtual-chassis fast-failover ge\ncommit",
+    "cmd_category": "set",
+    "topic": "virtual-chassis",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "how to display all records of poe telemetry of a specific interface",
+    "context": "show poe telemetries interface <interface-name> count all",
+    "answer": "Use the following command in the operational mode:\nshow poe telemetries interface <interface-name> count all",
+    "parameter_disambig": {
+      "interface-name": "ge-0/0/6"
+    },
+    "parm_answer": "Use the following command in the operational mode:\nshow poe telemetries interface ge-0/0/6 count all",
+    "cmd_category": "show",
+    "topic": "poe",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "remove the configured ntp server",
+    "context": "delete system ntp server <ntp-server-address>",
+    "answer": "Use the following command in the configuration mode:\ndelete system ntp server <ntp-server-address>\ncommit",
+    "parameter_disambig": {
+      "ntp-server-address": "192.168.1.100"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\ndelete system ntp server 192.168.1.100\ncommit",
+    "cmd_category": "delete",
+    "topic": "system",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "set the host name of the switch to SW-SCHOOL",
+    "context": "set system host-name <host-name>",
+    "answer": "Use the following command in the configuration mode:\nset system host-name SW-SCHOOL\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "how to set a mac limit on an interface",
+    "context": "set ethernet-switching-options secure-access-port interface <interface-name> mac-limit <mac-limit>",
+    "answer": "Use the following command in the configuration mode:\nset ethernet-switching-options secure-access-port interface <interface-name> mac-limit <mac-limit>\ncommit",
+    "parameter_disambig": {
+      "interface-name": "ge-0/0/7",
+      "mac-limit": "5"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset ethernet-switching-options secure-access-port interface ge-0/0/7 mac-limit 5\ncommit",
+    "cmd_category": "set",
+    "topic": "ethernet-switching-options",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "Disable RSTP protocol on interface ge-0/0/0",
+    "context": "set protocols rstp interface <interface-name> disable",
+    "answer": "Use the following command in the configuration mode:\nset protocols rstp interface ge-0/0/0 disable\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Power off all chassis members in 20 minutes and show the following message \"This switch will be powered off in 20 minutes. Please save your data and log out immediately\"",
+    "context": "request system power-off in <minutes> message <message> all-members",
+    "answer": "Use the following command in the operational mode:\nrequest system power-off in 20 message \"This switch will be powered off in 20 minutes. Please save your data and log out immediately\" all-members",
+    "cmd_category": "request",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "disable IGMP snooping communication over routing socket traceoptions",
+    "context": "set protocols igmp-snooping traceoptions flag krt disable",
+    "answer": "Use the following command in the configuration mode:\nset protocols igmp-snooping traceoptions flag krt disable\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "set the system description of the SNMP protocol to MAIN_ROOM",
+    "context": "set snmp description <description>",
+    "answer": "Use the following command in the configuration mode:\nset snmp description MAIN_ROOM\ncommit",
+    "cmd_category": "set",
+    "topic": "snmp",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "List the hardware version level and serial number of all FPCs and PICs installed in the switch chassis",
+    "context": "show chassis hardware",
+    "answer": "Use the following command in the operational mode:\nshow chassis hardware",
+    "cmd_category": "show",
+    "topic": "chassis",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "disable IGMP snooping state transitions traceoptions",
+    "context": "set protocols igmp-snooping traceoptions flag state disable",
+    "answer": "Use the following command in the configuration mode:\nset protocols igmp-snooping traceoptions flag state disable\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Reboot the switch",
+    "context": "request system reboot",
+    "answer": "Use the following command in the operational mode:\nrequest system reboot",
+    "cmd_category": "request",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "show the log messages of interface ge-0/0/19",
+    "context": "show log messages | match <interface-name>",
+    "answer": "Use the following command in the operational mode:\nshow log messages | match ge-0/0/19",
+    "cmd_category": "show",
+    "topic": "log",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Halt the system",
+    "context": "request system halt",
+    "answer": "Use the following command in the operational mode:\nrequest system halt",
+    "cmd_category": "request",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "disable the virtual chassis fast failover for XE VC uplink ports",
+    "context": "delete virtual-chassis fast-failover xe",
+    "answer": "Use the following command in the configuration mode:\ndelete virtual-chassis fast-failover xe\ncommit",
+    "cmd_category": "delete",
+    "topic": "virtual-chassis",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "set the interface ge-1/0/2 in the vlan Data",
+    "context": "set interfaces <interface-name> unit <unit-number> family ethernet-switching port-mode access vlan members <vlan-name-or-id>",
+    "answer": "Use the following command in the configuration mode:\nset interfaces ge-1/0/2 unit 0 family ethernet-switching port-mode access vlan members Data\ncommit",
+    "cmd_category": "set",
+    "topic": "interfaces",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Don't allow any user to read the log file",
+    "context": "set system syslog archive no-world-readable",
+    "answer": "Use the following command in the configuration mode:\nset system syslog archive no-world-readable\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "how to delete RSTP root-protect feature on a specific interface",
+    "context": "delete protocols rstp interface <interface-name> no-root-port",
+    "answer": "Use the following command in the configuration mode:\ndelete protocols rstp interface <interface-name> no-root-port\ncommit",
+    "parameter_disambig": {
+      "interface-name": "ge-0/0/8"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\ndelete protocols rstp interface ge-0/0/8 no-root-port\ncommit",
+    "cmd_category": "delete",
+    "topic": "protocols",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "define the l3 interface of the HR VLAN as vlan.2010",
+    "context": "set vlans <vlan-name> l3-interface <vlan.unit-number>",
+    "answer": "Use the following command in the configuration mode:\nset vlans HR l3-interface vlan.2010\ncommit",
+    "cmd_category": "set",
+    "topic": "vlans",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "set a mac limit of 2 on all interfaces and drop the packets received at the interface if a violation occur",
+    "context": "set ethernet-switching-options secure-access-port interface all mac-limit <limit> action drop",
+    "answer": "Use the following command in the configuration mode:\nset ethernet-switching-options secure-access-port interface all mac-limit 2 action drop\ncommit",
+    "cmd_category": "set",
+    "topic": "ethernet-switching-options",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Show Multiple Spanning Tree Protocol (MSTP) information",
+    "context": "show spanning-tree mstp configuration",
+    "answer": "Use the following command in the operational mode:\nshow spanning-tree mstp configuration",
+    "cmd_category": "show",
+    "topic": "spanning-tree",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "set the device to automatically fix a corrupt Junos OS file in the primary root partition",
+    "context": "set system auto-snapshot",
+    "answer": "Use the following commands in the configuration mode:\nset system auto-snapshot\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "How to check the correctness of the configuration before committing them",
+    "context": "commit check",
+    "answer": "Use the following command in the configuration mode:\ncommit check",
+    "cmd_category": "commit",
+    "topic": "check",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "show IGMP snooping VLAN information",
+    "context": "show igmp-snooping vlans",
+    "answer": "Use the following command in the operational mode:\nshow igmp-snooping vlans",
+    "cmd_category": "show",
+    "topic": "igmp-snooping",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "set the IGMP protocol traceoptions to trace routing protocol timer processing",
+    "context": "set protocols igmp traceoptions flag timer",
+    "answer": "Use the following command in the configuration mode:\nset protocols igmp traceoptions flag timer\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "enable the port ge-0/0/16 to carry traffic from multiple vlans",
+    "context": "set interfaces <interface-name> unit <unit-number> family ethernet-switching port-mode trunk",
+    "answer": "Use the following commands in the configuration mode:\nset interfaces ge-0/0/16 unit 0 family ethernet-switching port-mode trunk\ncommit",
+    "cmd_category": "set",
+    "topic": "interfaces",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "how to configure the sflow polling interval",
+    "context": "set protocols sflow polling-interval <interval>",
+    "answer": "Use the following command in the configuration mode:\nset protocols sflow polling-interval <interval>\ncommit",
+    "parameter_disambig": {
+      "interval": "20"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset protocols sflow polling-interval 20\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "set the host name of the switch to HR",
+    "context": "set system host-name <host-name>",
+    "answer": "Use the following command in the configuration mode:\nset system host-name HR\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Display ARP statistics",
+    "context": "show system statistics arp",
+    "answer": "Use the following command in the operational mode:\nshow system statistics arp",
+    "cmd_category": "show",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "how to set an interface to keep the learned MAC address even after the switche restarts",
+    "context": "set ethernet-switching-options secure-access-port interface <interface-name> persistent-learning",
+    "answer": "Use the following command in the configuration mode:\nset ethernet-switching-options secure-access-port interface <interface-name> persistent-learning\ncommit",
+    "parameter_disambig": {
+      "interface-name": "ge-0/0/9"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset ethernet-switching-options secure-access-port interface ge-0/0/9 persistent-learning\ncommit",
+    "cmd_category": "set",
+    "topic": "ethernet-switching-options",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "Show OSPF interface status information",
+    "context": "show ospf interface",
+    "answer": "Use the following command in the operational mode:\nshow ospf interface",
+    "cmd_category": "show",
+    "topic": "ospf",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "disable IGMP snooping policy processing traceoptions",
+    "context": "set protocols igmp-snooping traceoptions flag policy disable",
+    "answer": "Use the following command in the configuration mode:\nset protocols igmp-snooping traceoptions flag policy disable\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "How to set up a new user account with operator privilege on the EX3300 switch",
+    "context": "set system login user <user-name> class operator",
+    "answer": "Use the following command in the configuration mode:\nset system login user <user-name> class operator\ncommit",
+    "parameter_disambig": {
+      "user-name": "operator2"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset system login user operator2 class operator\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "how to display a specific number of POE telemetry records of an interface",
+    "context": "show poe telemetries interface <interface-name> count <num-of-records>",
+    "answer": "Use the following command in the operational mode:\nshow poe telemetries interface <interface-name> count <num-of-records>",
+    "parameter_disambig": {
+      "interface-name": "ge-0/0/10",
+      "num-of-records": "10"
+    },
+    "parm_answer": "Use the following command in the operational mode:\nshow poe telemetries interface ge-0/0/10 count 10",
+    "cmd_category": "show",
+    "topic": "poe",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "set the following description \"Printer\" on interface ge-1/0/10",
+    "context": "set interfaces <interface-name> unit <unit-number> description <description>",
+    "answer": "Use the following command in the configuration mode:\nset interfaces ge-1/0/10 unit 0 description Printer\ncommit",
+    "cmd_category": "set",
+    "topic": "interfaces",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Display the entries in the OSPF link-state database",
+    "context": "show ospf database",
+    "answer": "Use the following command in the operational mode:\nshow ospf database",
+    "cmd_category": "show",
+    "topic": "ospf",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Disable RSTP bridge detection state machine traceoptions",
+    "context": "set protocols rstp traceoptions flag bridge-detection-state-machine disable",
+    "answer": "Use the following command in the configuration mode:\nset protocols rstp traceoptions flag bridge-detection-state-machine disable\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "set the allow-duplicate for the system log messages",
+    "context": "set system syslog allow-duplicates",
+    "answer": "Use the following command in the configuration mode:\nset system syslog allow-duplicates\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "set system login message to RESTRICTED ACCESS",
+    "context": "set system login message <\"login-message\">",
+    "answer": "Use the following command in the configuration mode:\nset system login message \"RESTRICTED ACCESS\"\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "show the mac information of the interface ge-0/0/2",
+    "context": "show ethernet-switching table interface <interface-name>",
+    "answer": "Use the following command in the operational mode:\nshow ethernet-switching table interface ge-0/0/2",
+    "cmd_category": "show",
+    "topic": "ethernet-switching",
+    "ambiguity_level": 1,
+    "parameter_score": 0,
+    "description_score": 1
+  },
+  {
+    "question": "Allow HTTPS web management using self generated certificates",
+    "context": "set system services web-management https system-generated-certificate",
+    "answer": "Use the following commands in the configuration mode:\nset system services web-management https system-generated-certificate\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Show users currently editing configuration",
+    "context": "status",
+    "answer": "Use the following command in the configuration mode:\nstatus",
+    "cmd_category": "status",
+    "topic": "None",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Notify the user Tala when authentication and authorization attempts related event of all severity level occur",
+    "context": "set system syslog user <user-name> authorization all",
+    "answer": "Use the following command in the configuration mode:\nset system syslog user Tala authorization all\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Enable sFlow protocol on interface ge-0/0/0",
+    "context": "set protocols sflow interfaces <interface-name>",
+    "answer": "Use the following command in the configuration mode:\nset protocols sflow interfaces ge-0/0/0\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "set the system log rotate frequency to 30 min",
+    "context": "set system syslog log-rotate-frequency <interval>",
+    "answer": "Use the following command in the configuration mode:\nset system syslog log-rotate-frequency 30\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "show the log messages of the SNMP protocol of interface ge-0/0/19",
+    "context": "show log messages | match snmp | match <interface-name>",
+    "answer": "Use the following command in the operational mode:\nshow log messages | match snmp | match ge-0/0/19",
+    "cmd_category": "show",
+    "topic": "log",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "delete the SNMP authentication trap category from the trap-group MONITOR",
+    "context": "delete snmp trap-group <trap-group-name> categories <category>",
+    "answer": "Use the following command in the configuration mode:\ndelete snmp trap-group MONITOR categories authentication\ncommit",
+    "cmd_category": "delete",
+    "topic": "snmp",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "enable ssh connections to the switch",
+    "context": "set system services ssh",
+    "answer": "Use the following commands in the configuration mode:\nset system services ssh\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "delete the virtual chassis member 5",
+    "context": "delete virtual-chassis member <member-id>",
+    "answer": "Use the following command in the configuration mode:\ndelete virtual-chassis member 5\ncommit",
+    "cmd_category": "delete",
+    "topic": "virtual-chassis",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "disable the SNMP VRRP notifications for the trap-group MONITOR-GROUP-L1",
+    "context": "delete snmp trap-group <trap-group-name> categories vrrp-events",
+    "answer": "Use the following command in the configuration mode:\ndelete snmp trap-group MONITOR-GROUP-L1 categories vrrp-events\ncommit",
+    "cmd_category": "delete",
+    "topic": "snmp",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "block bpdu on interface ge-0/0/7 given that the spanning tree protocol is disabled",
+    "context": "set ethernet-switching-options bpdu-block interface <interface-name>",
+    "answer": "Use the following command in the configuration mode:\nset ethernet-switching-options bpdu-block interface ge-0/0/7\ncommit",
+    "cmd_category": "set",
+    "topic": "ethernet-switching-options",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Trace virtual chassis task processing",
+    "context": "set virtual-chassis traceoptions flag task",
+    "answer": "Use the following command in the configuration mode:\nset virtual-chassis traceoptions flag task\ncommit",
+    "cmd_category": "set",
+    "topic": "virtual-chassis",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "disable RSTP traceoptions of BPDU reception and transmission",
+    "context": "set protocols rstp traceoptions flag bpdu disable",
+    "answer": "Use the following command in the configuration mode:\nset protocols rstp traceoptions flag bpdu disable\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "check the PoE power budget and consumption for the switch",
+    "context": "show poe controller",
+    "answer": "Use the following command in the operational mode:\nshow poe controller",
+    "cmd_category": "show",
+    "topic": "poe",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "show the lldp protocol detailed information and parameters",
+    "context": "show lldp detail",
+    "answer": "Use the following commands in the operational mode:\nshow lldp detail",
+    "cmd_category": "show",
+    "topic": "lldp",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Display LLDP statistics of interface ge-0/0/10",
+    "context": "show lldp statistics interface <interface-name>",
+    "answer": "Use the following commands in the operational mode:\nshow lldp statistics interface ge-0/0/10",
+    "cmd_category": "show",
+    "topic": "lldp",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "Show boot time messages.",
+    "context": "show system boot-messages",
+    "answer": "Use the following command in the operational mode:\nshow system boot-messages",
+    "cmd_category": "show",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "set the IGMP protocol traceoptions to trace host notifications",
+    "context": "set protocols igmp traceoptions flag host-notification",
+    "answer": "Use the following command in the configuration mode:\nset protocols igmp traceoptions flag host-notification\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "enable ssh connections to the switch with max-sessions-per-connection set to 5, connection-limit set to 10, and rate-limit 5",
+    "context": "set system services ssh max-sessions-per-connection <max-number-of-sessions> connection-limit <connection-limit> rate-limit <rate-limit>",
+    "answer": "Use the following commands in the configuration mode:\nset system services ssh max-sessions-per-connection 5 connection-limit 10 rate-limit 5\ncommit",
+    "cmd_category": "set",
+    "topic": "system",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "How to set an l3 interface for a vlan",
+    "context": "set vlans <vlan-name> l3-interface <vlan.unit-number>",
+    "answer": "Use the following command in the configuration mode:\nset vlans <vlan-name> l3-interface <vlan.unit-number>\ncommit",
+    "parameter_disambig": {
+      "vlan-name": "FINANCE",
+      "vlan.unit-number": "vlan.7"
+    },
+    "parm_answer": "Use the following command in the configuration mode:\nset vlans FINANCE l3-interface vlan.7\ncommit",
+    "cmd_category": "set",
+    "topic": "vlans",
+    "ambiguity_level": 2,
+    "parameter_score": 2,
+    "description_score": 0
+  },
+  {
+    "question": "Disable IGMP protocol general events traceoptions",
+    "context": "set protocols igmp traceoptions flag general disable",
+    "answer": "Use the following command in the configuration mode:\nset protocols igmp traceoptions flag general disable\ncommit",
+    "cmd_category": "set",
+    "topic": "protocols",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  },
+  {
+    "question": "disable the virtual chassis Fast failover for GE VC uplink ports",
+    "context": "delete virtual-chassis fast-failover ge",
+    "answer": "Use the following command in the configuration mode:\ndelete virtual-chassis fast-failover ge\ncommit",
+    "cmd_category": "delete",
+    "topic": "virtual-chassis",
+    "ambiguity_level": 0,
+    "parameter_score": 0,
+    "description_score": 0
+  }
+]
