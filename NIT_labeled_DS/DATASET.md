@@ -17,9 +17,9 @@ The data builds on the **Network Intent Translations (NIT)** dataset and adds **
 |---|---|---|
 | `nit_train.json` | 847 | Training split. Original NIT entries with ambiguity labels. |
 | `nit_val.json` | 94 | Validation split. Original NIT entries with ambiguity labels. |
-| `Test.json` | 198 | Test split. **Synthesized** (see below). |
+| `synthesized_test_split.json` | 198 | Test split. **Synthesized** (see below). |
 
-> If your local file names differ, adjust the names above; the content description is what matters.
+
 
 ### The test split is synthesized
 
