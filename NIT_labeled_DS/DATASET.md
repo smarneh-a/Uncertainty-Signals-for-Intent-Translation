@@ -25,8 +25,6 @@ The data builds on the **Network Intent Translations (NIT)** dataset and adds **
 
 Train and validation entries come from the original, manually written NIT dataset. The test split is different: its entries were **synthesized** to cover all six ambiguity levels (L0–L5), because the original NIT questions are almost all fully specified and clear (see the distribution table below). Synthesized entries are rewrites of NIT-style intents in which parameter values or task wording are deliberately made vaguer, and they carry their own labels.
 
-- No test question appears in the train or validation split (checked: zero overlap).
-- Where an entry was derived from an existing intent, `original_question` and/or `original_answer` keep the source text before synthesis (62 entries have `original_answer`, 5 have `original_question`).
 
 ## Original dataset
 
